@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/conno/SleepEphone/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.32094116210937496" />
+        <entry key="app/src/main/res/layout/fragment.xml" value="0.36153846153846153" />
       </map>
     </option>
   </component>
