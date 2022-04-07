@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.layout, left);
                 fragmentTransaction.commit();
             }
-        };
+        });
         findViewById(R.id.reportsButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.layout, middle);
                 fragmentTransaction.commit();
             }
-        };
+        });
         findViewById(R.id.settingsButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.layout, right);
                 fragmentTransaction.commit();
             }
-        };
+        });
     }
 }
 
