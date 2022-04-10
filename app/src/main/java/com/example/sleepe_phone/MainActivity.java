@@ -9,14 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.Manifest;
-import android.app.PendingIntent;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-
-import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.SleepSegmentRequest;
-import com.google.android.gms.tasks.Task;
 
 public class MainActivity extends AppCompatActivity {
     // Register the permissions callback, which handles the user's response to the
