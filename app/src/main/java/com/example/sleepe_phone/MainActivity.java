@@ -9,8 +9,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.Manifest;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+
+import com.google.android.gms.location.ActivityRecognition;
+import com.google.android.gms.location.SleepSegmentRequest;
+import com.google.android.gms.tasks.Task;
 
 public class MainActivity extends AppCompatActivity {
     // Register the permissions callback, which handles the user's response to the
@@ -59,7 +65,20 @@ public class MainActivity extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(
                 this, Manifest.permission.ACTIVITY_RECOGNITION) ==
                 PackageManager.PERMISSION_GRANTED) {
-            // You can use the API that requires the permission.
+            // This is the code that needs to be added to register for sleep updates.
+            /**
+             * val task = ActivityRecognition.getClient(context)
+             *     .requestSleepSegmentUpdates(
+             *         pendingIntent,
+             *         SleepSegmentRequest.getDefaultSleepSegmentRequest())
+             *     .addOnSuccessListener {
+             *         viewModel.updateSubscribedToSleepData(true)
+             *         Log.d(TAG, "Successfully subscribed to sleep data.")
+             *     }
+             *     .addOnFailureListener { exception ->
+             *         Log.d(TAG, "Exception when subscribing to sleep data: $exception")
+             *     }
+             */
         } else {
             // You can directly ask for the permission.
             // The registered ActivityResultCallback gets the result of this request.
